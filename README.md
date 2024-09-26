@@ -17,6 +17,7 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+```javascript
 function convertToAdjList(adjMatrix) {
     adjList = [];                                                     1
     for(row = 0; row < adjMatrix.length; row++) {                     n    loops once for each row in matrix
@@ -30,6 +31,7 @@ function convertToAdjList(adjMatrix) {
     }
     return adjList;                                                   1
 }
+```
 
 T(n) = n<sup>2</sup>
 
