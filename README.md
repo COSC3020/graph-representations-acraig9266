@@ -22,8 +22,8 @@ function convertToAdjList(adjMatrix) {
     adjList = [];                                                     1
     for(row = 0; row < adjMatrix.length; row++) {                     n    loops once for each row in matrix
         adjList[row] = [];                                              1
-        for (column = 0; column < adjMatrix.length; column++) {         n  loops once for each column in matrix, inside first loop so combine for them to be n<sup>2</sup>
-                                                                           highest order is n<sup>2</sup>, rest can be ignored.
+        for (column = 0; column < adjMatrix.length; column++) {         n  loops once for each column in matrix, inside first loop so combine for them to be n^2
+                                                                           highest order is now n^2, rest of function can be ignored.
             if (adjMatrix[row][column] == 1) {                            1
                 adjList[row].push(column);                                1
             }
