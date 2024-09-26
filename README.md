@@ -17,7 +17,23 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-O(n<sup>2</sup>)
+function convertToAdjList(adjMatrix) {
+    adjList = [];                                                     1
+    for(row = 0; row < adjMatrix.length; row++) {                     n    loops once for each row in matrix
+        adjList[row] = [];                                              1
+        for (column = 0; column < adjMatrix.length; column++) {         n  loops once for each column in matrix, inside first loop so combine for them to be n<sup>2</sup>
+                                                                           highest order is n<sup>2</sup>, rest can be ignored.
+            if (adjMatrix[row][column] == 1) {                            1
+                adjList[row].push(column);                                1
+            }
+        }
+    }
+    return adjList;                                                   1
+}
+
+T(n) = n<sup>2</sup>
+
+T(n) ∈ Θ(n<sup>2</sup>)
 
 
 ## Bonus
