@@ -5,7 +5,7 @@ function convertToAdjList(adjMatrix) {
         adjList[row] = [];
         for (column = 0; column < adjMatrix.length; column++) {
             if (adjMatrix[row][column] == 1) {
-                adjList[row][column] = column;
+                list[row].push(column);
             }
         }
     }
